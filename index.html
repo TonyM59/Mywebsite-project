@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My first html website</title>
+</head>
+  
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/Copy of Flower logo icon - Made with PosterMyWall.jpg"></a>
+   <div class="nav-links">
+		  <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="about us.html">ABOUT US</a></li>
+               <li><a href="products.html">PRODUCTS</a></li>
+               <li><a href="contact us.html">CONTACT US</a></li>
+		  </ul>
+          </div>
+
+      </nav>
+    </section>
+<br/><br/>
+   <p>
+      <div class="container image"><br>
+          <h2>Our services</h2><br>
+          <h3>WHAT WE DO</h3>
+          <br><br>
+		  
+               <h4 class="side"> At Flower World, we believe that every person is unique<br>
+                and desderves the most inspiring bouquet created especially<br>
+                for them. We work with the freshest, high-end flowers available,<br>
+                and deliver a one-of-a kind arragement perfect for the occasion.<br>
+				</h4>
+                
+				<p >
+				<h4 class="sidebar">
+                Give us a call at (072 901 2214) for your personal order, or <br>
+                fill out our contact form <a href="contact us.html">here</a> for one<br>
+				of our excellent team members to personally contact you.</h4>
+				</p>
+      </div>
+  </p>
+
+       <div class="container">
+   <p>
+    
+                <h2 class="h2">
+                Why do you have to choose World Flower?</h2>
+   </p>
+				
+      <div class="container">
+          <div class="spacing">
+               <h3>What you see is what you get&#129330</h3>
+                 Love the bouquet on your screen? That is exactly what our<br>
+                 local florist will prepare freshly for your order or you can<br>
+                 get your money back.
+          </div>
+
+       <div class="spacing">
+               <h3>Always unique, never generic&#127800</h3>
+                we work with the most talented and unique artisons and<br>
+                we are passionate our skilled family of florist.
+       </div>
+
+       <div class="spacing">
+               <h3>Hand-delivered with care and attention&#128656</h3>
+                Each of our order is professionally arranged wrapped <br>
+                and safely delivered with a hand-wriiten card, on the <br>
+                exact day you need it.
+       </div> 
+	   </div>
+
+       <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images/photo-1459156212016-c812468e2115.jpg"  alt="image" style="width:100%" >
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/NETNV006-1.jpg"  alt="image" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="images/photo-1550237390-96532abac3ec.jpg"  alt="image" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div> 
+
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+        <br><br>
+	   
+ 
+  <section class="footer"> 
+    <footer >
+    <h4>Connect with us!</h4><br>
+    <div>
+        <a href="https://www.facebook.com/netflorist/"><i class="fa fa-facebook-official"style="font-size:30px; color: black" ></i></a>
+        <a href="https://twitter.com/NetFlorist/"><i class="fa fa-twitter" style="font-size:30px; color: black"></i></a>
+       <a href="https://www.instagram.com/NetFlorist/"><i class="fa fa-instagram"style="font-size:30px; color: black" ></i></a>
+      <a href="https://za.pinterest.com/netflorist/"><i class="fa fa-pinterest" style="font-size:30px; color: black"></i></a>
+      </div>
+      <br><br>
+      
+
+      <hr><br>
+        <p>&copy; 2021 Flower World.All Rights Reserved|Tony Mahlangu</p>
+   </footer>
+</section>
+</body>
+
+</html>
